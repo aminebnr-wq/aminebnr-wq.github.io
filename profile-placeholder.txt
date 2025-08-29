@@ -1,0 +1,3 @@
+هذا ملف placeholder: استبدله بصورة شخصية باسم assets/profile.jpg
+
+Replace this file with your profile image at assets/profile.jpg
