@@ -3,90 +3,95 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>BNR — موقع شخصي</title>
-  <meta name="description" content="موقع بورتفوليو شخصي لـ BNR — مشاريع، سيرة، تواصل.">
-  <link rel="icon" href="/favicon.ico">
-  <link rel="stylesheet" href="/styles.css">
+  <title>بنور محمد أمين — BNR</title>
+  <meta name="description" content="بورتفوليو بنور محمد أمين — From failure to code.">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
     <nav class="nav container">
-      <a class="brand" href="#">BNR</a>
-      <button id="darkToggle" aria-label="تبديل الوضع">🌙</button>
-      <ul class="nav-links">
-        <li><a href="#about">عنّي</a></li>
-        <li><a href="#projects">مشاريع</a></li>
-        <li><a href="#blog">مقالات</a></li>
-        <li><a href="#contact">تواصل</a></li>
-      </ul>
+      <div class="brand">بنور محمد أمين — <span class="muted">BNR</span></div>
+      <div class="lang-switch">
+        <button id="langAr" aria-label="Arabic">ع</button>
+        <button id="langEn" aria-label="English">EN</button>
+      </div>
     </nav>
   </header>
 
-  <main>
-    <section class="hero container" id="home">
-      <h1>أهلاً — أنا BNR 👋</h1>
-      <p>مطور، مهتم بالتقنية والبرمجة. هنا أشارك مشاريعي ومقالات قصيرة وطرق للتواصل.</p>
-      <div class="cta">
-        <a class="btn" href="#projects">شاهد مشاريعي</a>
-        <a class="btn ghost" href="#contact">تواصل معي</a>
+  <main class="container">
+    <!-- HERO -->
+    <section id="hero" class="hero card">
+      <div class="hero-left">
+        <img id="profilePic" src="assets/profile-placeholder.txt" alt="Profile" />
+      </div>
+      <div class="hero-right">
+        <h1 data-ar="أنا بنور محمد أمين" data-en="I'm Benour Mohamed Amin">أنا بنور محمد أمين</h1>
+        <p class="lead" data-ar="من الفشل إلى الأمل — رحلتي مع التقنية" data-en="From failure to hope — my journey into tech.">
+          من الفشل إلى الأمل — رحلتي مع التقنية
+        </p>
+        <div class="cta">
+          <a href="#about" class="btn" data-ar="اقرأ قصتي" data-en="Read my story">اقرأ قصتي</a>
+          <a href="#projects" class="btn ghost" data-ar="مشاريعي" data-en="Projects">مشاريعي</a>
+        </div>
       </div>
     </section>
 
-    <section id="about" class="container card">
-      <h2>عنّي</h2>
-      <p>هنا تحط ملخص سريع عنك: سنين الخبرة، التقنيات المفضلة، لغة البرمجة، هدفك.</p>
-      <ul class="skills">
-        <li>Python</li>
-        <li>JavaScript</li>
-        <li>HTML & CSS</li>
-        <li>Git / GitHub</li>
-      </ul>
+    <!-- ABOUT / STORY -->
+    <section id="about" class="card">
+      <h2 data-ar="قصتي" data-en="My Story">قصتي</h2>
+      <div class="story">
+        <p data-ar="بدأت قصتي بإخفاق في شهادة البكالوريا، كانت فترة صعيبة من ضغط نفسي وخيبة أمل. ماخلّتش هذا يكسّر عزيمتي، بل بالعكس درّبني وصقلت رغبتي في التعلم." data-en="My story began with failing the baccalaureate — a hard time, mental pressure and disappointment. I didn't let it stop me; it sharpened my will to learn.">
+          بدأت قصتي بإخفاق في شهادة البكالوريا، كانت فترة صعيبة من ضغط نفسي وخيبة أمل. ماخلّتش هذا يكسّر عزيمتي، بل بالعكس درّبني وصقلت رغبتي في التعلم.
+        </p>
+        <p data-ar="رغم الصعوبات، نعدّيت الباك ودرست في الجامعة في تخصص (أذكر التخصص هنا). خلال هاذي الفترة، تقدّمت للتجنيد وما تمش قبولي في الجيش الجزائري — تجربة أخرى زادتني إصرار." data-en="Despite the hardships, I passed the baccalaureate and enrolled at university (insert major). I applied for national service but was not accepted — another setback that made me more determined.">
+          رغم الصعوبات، نعدّيت الباك ودرست في الجامعة في تخصص (أذكر التخصص هنا). خلال هاذي الفترة، تقدّمت للتجنيد وما تمش قبولي في الجيش الجزائري — تجربة أخرى زادتني إصرار.
+        </p>
+        <p data-ar="التحقت بالبرمجة والتقنية؛ بدات بمشاريع صغيرة وتجارب في Python وJavaScript. الحاضر: نشتغل باش نحسن مهاراتي ونبني مشاريع قابلة للنشر والعمل عن بُعد." data-en="I dove into programming and tech; I started with small projects and experiments in Python and JavaScript. Now I'm building skills and projects that I can publish and use for remote work.">
+          التحقت بالبرمجة والتقنية؛ بدات بمشاريع صغيرة وتجارب في Python وJavaScript. الحاضر: نشتغل باش نحسن مهاراتي ونبني مشاريع قابلة للنشر والعمل عن بُعد.
+        </p>
+      </div>
     </section>
 
-    <section id="projects" class="container">
-      <h2>مشاريع</h2>
+    <!-- PROJECTS -->
+    <section id="projects" class="card">
+      <h2 data-ar="مشاريعي" data-en="Projects">مشاريعي</h2>
       <div class="grid">
         <article class="project">
-          <h3>مشروع 1 — صفحة ترويسة</h3>
-          <p>وصف قصير للمشروع: الأدوات، الفكرة، رابط GitHub.</p>
-          <p class="muted">Tech: HTML · CSS · JS</p>
+          <h3>Project — Soon...</h3>
+          <p class="muted" data-ar="قريباً..." data-en="Soon...">قريباً...</p>
         </article>
         <article class="project">
-          <h3>مشروع 2 — أداة تحليل</h3>
-          <p>وصف قصير يوضح الهدف والنتائج.</p>
-          <p class="muted">Tech: Python</p>
+          <h3>Project — Soon...</h3>
+          <p class="muted" data-ar="قريباً..." data-en="Soon...">قريباً...</p>
         </article>
       </div>
     </section>
 
-    <section id="blog" class="container card">
-      <h2>مقالات قصيرة</h2>
-      <ul class="posts">
-        <li><a href="#">لماذا أتعلم Python في 2025</a></li>
-        <li><a href="#">نصائح للهجرة والعمل عن بُعد</a></li>
-      </ul>
+    <!-- VISION -->
+    <section id="vision" class="card">
+      <h2 data-ar="رؤيتي" data-en="Vision">رؤيتي</h2>
+      <p data-ar="الهجرة والعمل عن بُعد: هدفي نطور مهاراتي ونخدم مع شركات عالمية عبر الإنترنت." data-en="Migration & remote work: my goal is to grow my skills and work with global companies remotely.">
+        الهجرة والعمل عن بُعد: هدفي نطور مهاراتي ونخدم مع شركات عالمية عبر الإنترنت.
+      </p>
     </section>
 
-    <section id="contact" class="container card">
-      <h2>تواصل</h2>
-      <p>بريد إلكتروني: <a href="mailto:bnr@example.com">bnr@example.com</a></p>
-      <form id="contactForm">
-        <label>اسم
-          <input name="name" required>
-        </label>
-        <label>رسالة
-          <textarea name="message" rows="4" required></textarea>
-        </label>
-        <button type="submit" class="btn">أرسل</button>
-      </form>
-      <p class="muted">أو تواصل عبر GitHub: <a href="https://github.com/aminebnr-wq">github.com/aminebnr-wq</a></p>
+    <!-- CONTACT -->
+    <section id="contact" class="card">
+      <h2 data-ar="تواصل معي" data-en="Contact">تواصل معي</h2>
+      <p>📧 <a href="mailto:aminebnrusa@gmail.com">aminebnrusa@gmail.com</a></p>
+      <div class="socials">
+        <a href="https://github.com/aminebnr-wq" target="_blank" rel="noopener">GitHub</a>
+        <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
     </section>
+
+    <footer class="site-footer card">
+      <div>© <span id="year"></span> بنور محمد أمين — BNR</div>
+      <div class="small muted">Made with ❤️ — بنيت بحرفية وبصدق</div>
+    </footer>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">© <span id="year"></span> BNR — مصمم ومطور. كل الحقوق محفوظة.</div>
-  </footer>
-
-  <script src="/script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
