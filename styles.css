@@ -1,0 +1,21 @@
+:root{--bg:#0f1724;--card:#0b1220;--text:#e6eef8;--muted:#9fb0c8;--accent:#2563eb}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,Roboto,Arial;line-height:1.5;background:linear-gradient(180deg,#071226 0%,var(--bg) 100%);color:var(--text);}
+.container{max-width:1000px;margin:0 auto;padding:2rem}
+.site-header{border-bottom:1px solid rgba(255,255,255,0.04)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.brand{font-weight:700;color:var(--text);text-decoration:none}
+.nav-links{list-style:none;display:flex;gap:1rem;margin:0;padding:0}
+.nav-links a{color:var(--muted);text-decoration:none}
+.hero{padding:4rem 0;text-align:center}
+.btn{display:inline-block;padding:.6rem 1rem;border-radius:8px;background:var(--accent);color:white;text-decoration:none}
+.btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06)}
+.card{background:rgba(255,255,255,0.03);padding:1.2rem;border-radius:12px;margin-top:1.2rem}
+.skills{display:flex;gap:.6rem;padding:0;margin:0;list-style:none}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}
+.project{background:rgba(255,255,255,0.02);padding:1rem;border-radius:10px}
+.muted{color:var(--muted);font-size:.9rem}
+.small{font-size:.9rem}
+.posts{padding-left:1rem}
+.site-footer{border-top:1px solid rgba(255,255,255,0.04);padding:1rem;margin-top:2rem;text-align:center;color:var(--muted)}
+@media (max-width:600px){.nav-links{display:none}}
